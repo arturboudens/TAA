@@ -2,10 +2,13 @@
 #include <math.h>
 
 int primo(int v){
+    if(v < 2){
+        return 0;
+    }
     if(v == 2){
         return 1;
     }
-    if(v <= 1 || v % 2 == 0){
+    if(v % 2 == 0){
         return 0;
     }
     
