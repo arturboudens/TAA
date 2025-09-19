@@ -21,7 +21,7 @@ int main(){
 
     long long soma_real = 0;
 
-    for (int i = 0; i < n -1; i++){
+    for (int i = 0; i < n - 1; i++){
         soma_real += lista[i];
     }
 
