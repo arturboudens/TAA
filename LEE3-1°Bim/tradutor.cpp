@@ -25,6 +25,9 @@ bool check(){
             else if(parenteses.top() == '{' && expressao[i] == '}'){
                 parenteses.pop();
             }
+            else{
+                return false;
+            }
         }
     }
     if(parenteses.empty()){
