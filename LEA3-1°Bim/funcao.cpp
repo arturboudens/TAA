@@ -18,7 +18,10 @@ int main(){
 
         long double chute = a * mid + b * cos(mid);
 
-        if(chute < c){
+        if(chute == c){
+            break;
+        }
+        else if(chute < c){
             low = mid;
         }
         else{
