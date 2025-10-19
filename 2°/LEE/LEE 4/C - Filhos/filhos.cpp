@@ -6,8 +6,8 @@ int main(){
     int c = 0, n = 0; cin >> n; cin >> c;
 
     if(n == 1){
-        cout;
-        cout << endl;
+        cout << "NULL" << endl;
+        return 0;
     }
     vector<int> arvore(n + 1);
 
