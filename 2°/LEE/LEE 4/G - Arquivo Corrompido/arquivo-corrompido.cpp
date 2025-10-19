@@ -14,6 +14,7 @@ int main(){
         set<pair<int,string>> alunos; 
     
         int erros = 0, l = 0;
+
         cin >> l;
 
         while(l--){
@@ -33,7 +34,7 @@ int main(){
         }
 
         if(erros != 0){
-            cout << "Corrompido com " << erros << " erros(s)" << endl;
+            cout << "Corrompido com " << erros << " erro(s)" << endl;
         }
         else{
             cout << "Arquivo OK" << endl;

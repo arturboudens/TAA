@@ -76,11 +76,11 @@ int main(){
     imprimirInfixa(raiz);
     cout << endl;
 
-    cout << "Pre.: ";
+    cout << "Pre: ";
     imprimirPrefixa(raiz);
     cout << endl;
 
-    cout << "Pos.: ";
+    cout << "Pos: ";
     imprimirPosfixa(raiz);
     cout << endl;
 
