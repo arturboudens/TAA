@@ -3,6 +3,10 @@
 using namespace std;
 
 int main(){
+    cin.tie(NULL);
+    cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+
     int t = 0; cin >> t;
 
     while(t--){
@@ -12,22 +16,14 @@ int main(){
         cin >> r;
         cin >> s;
 
-        set<char> letrasR;
-        set<char> letrasS;
+        sort(r.begin(), r.end());
+        sort(s.begin(), s.end());
 
-        for(char letra  : r){
-            letrasR.insert(letra);
-        }
-
-        for(char letra  : s){
-            letrasS.insert(letra);
-        }
-        
-        if(letrasR.size() == letrasS.size()){
-            cout << "ANAGRAMAS" << endl;
+        if(r != s){
+            cout << "DIFERENTES" << endl;
         }
         else{
-            cout << "DIFERENTES" << endl;
+            cout << "ANAGRAMAS" << endl;
         }
     }
 
