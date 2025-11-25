@@ -27,21 +27,17 @@ int main() {
         adj[v].push_back(u);
     }
  
-    int componentes = 0;
+    int grupo = 0;
     vector<bool> visitado(N + 1, false);
  
     for (int i = 1; i <= N; i++) {
         if (!visitado[i]) {
-            componentes++;
+            grupo++;
             dfs(i, adj, visitado);
         }
     }
  
-    if (componentes == 1) {
-        cout << "Todo mundo eh amigo de todo mundo" << endl;
-    } else {
-        cout << "Varios grupos de amigos" << endl;
-    }
+    cout << grupo - 1 << endl;
  
     return 0;
 }
